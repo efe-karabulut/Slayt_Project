@@ -1,0 +1,262 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+/* sıfırlama */
+
+.main-container {
+  font-family: "Poppins", sans-serif;
+  background-color: #ffcfd9;
+}
+/* yazı stili arkaplan rengi */
+
+.nav-bar {
+  display: flex;
+  height: 10vh;
+  width: 100%;
+  background-color: #fab8c6;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+  box-shadow: 0px 5px 5px -1px rgba(0, 0, 0, 0.59);
+  -webkit-box-shadow: 0px 5px 5px -1px rgba(0, 0, 0, 0.59);
+  -moz-box-shadow: 0px 5px 5px -1px rgba(0, 0, 0, 0.59);
+}
+/* navbar */
+
+.nav-bar a {
+  text-decoration: none;
+  color: white;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  font-weight: 600;
+  padding: 4px;
+  transition: 0.4s ease-in-out;
+}
+/* navbar yazıları */
+
+.nav-bar a:hover {
+  transform: scale(1.1);
+}
+/* top navdaki yazıların üstüne geldiğinde */
+
+.nav-left {
+  display: flex;
+  gap: 1rem;
+  margin-left: 1rem;
+}
+/* sol kısım */
+
+.nav-right {
+  display: flex;
+  gap: 1rem;
+  margin-right: 1rem;
+  align-items: center;
+}
+/* sağ kısım */
+
+#cubuk {
+  display: flex;
+  align-items: center;
+  height: 5vh;
+  min-width: 2px;
+  background-color: white;
+}
+/* top navdaki çubuk */
+
+.content-top-video {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+/* ortadaki video div i */
+
+.content-top-video video {
+  max-width: 50%;
+  max-height: 100%;
+  box-shadow: 4px 5px 12px 2px rgba(0, 0, 0, 1);
+  -webkit-box-shadow: 4px 5px 12px 2px rgba(0, 0, 0, 1);
+  -moz-box-shadow: 4px 5px 12px 2px rgba(0, 0, 0, 1);
+  border: 2px solid white;
+  border-radius: 2px;
+}
+/* ortadaki video stili */
+
+.content-bottom {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 40vh;
+}
+/* ana cardların divi */
+
+.content-bottom .left,
+.middle,
+.right {
+  width: 20%;
+  height: inherit;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 4px 5px 12px 2px rgba(0, 0, 0, 1);
+  -webkit-box-shadow: 4px 5px 12px 2px rgba(0, 0, 0, 1);
+  -moz-box-shadow: 4px 5px 12px 2px rgba(0, 0, 0, 1);
+  background-color: #fab8c6;
+  border: 2px solid rgb(255, 255, 255);
+  gap: 2px;
+  border-radius: 2px;
+  transition: 0.4s ease-in-out;
+}
+/* ana cardın divleri */
+
+.content-bottom img {
+  width: 100%;
+  height: inherit;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+/* card fotoğrafları */
+
+.content-bottom a {
+  text-decoration: none;
+  height: 10vh;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-weight: 900;
+  font-size: 2vw;
+  padding: 1rem;
+  width: 100%;
+  border: 1px solid black;
+  margin-top: 3px;
+}
+/* card yazıları */
+
+.content-bottom a:hover {
+  background-color: #ffcfd9;
+  color: black;
+}
+/* card yazılarının üzerine gelindiğinde */
+
+.content-bottom .right:hover {
+  transform: scale(1.1);
+}
+/* sağ card üstüne gelince büyüme */
+
+.content-bottom .middle:hover {
+  transform: scale(1.1);
+}
+/* orta card üstüne gelince büyüme */
+
+.content-bottom .left:hover {
+  transform: scale(1.1);
+}
+/* sol card üstüne gelince büyüme */
+
+.footer {
+  margin-top: 3rem;
+  width: 100%;
+  height: 30vh;
+  background-color: #fab8c6;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/* alt bar ana div */
+
+.footer .footer-left {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  text-align: center;
+}
+/* alt bar sol div */
+
+.footer a {
+  font-size: 2.5vh;
+  font-weight: 600;
+  text-decoration: none;
+  color: white;
+  transition: 0.4s ease-in-out;
+}
+/* alt bardaki yazılar */
+
+.footer .footer-left a:hover {
+  transform: scale(1.1);
+}
+/* alt navdaki yazıların ve iconların üzerine gelindiğinde */
+
+#cubuk2 {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  min-height: 20vh;
+  min-width: 2px;
+  max-width: 2px;
+  background-color: white;
+}
+/* alt bar ortadaki çubuk */
+
+.footer .footer-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 1rem;
+}
+/* alt bar sağ div */
+
+.footer-right .icon1 i {
+  transition: 0.3s ease-in-out;
+}
+/* instagram logosunun üzerine gelindiğinde kaç saniyede gerçekleşeceği */
+
+.footer-right .icon1 i:hover {
+  color: #e4405f;
+  transform: scale(1.1);
+}
+/* instagram logosunun üzerine gelindiğinde */
+
+.footer-right .icon2 i {
+  transition: 0.3s ease-in-out;
+}
+/* twitter logosunun üzerine gelindiğinde kaç saniyede gerçekleşeceği */
+
+.footer-right .icon2 i:hover {
+  color: #1da1f2;
+  transform: scale(1.1);
+}
+/* twitter logosunun üzerine gelindiğinde */
+
+.footer-right .icon3 i {
+  transition: 0.3s ease-in-out;
+}
+/* facebook logosunun üzerine gelindiğinde kaç saniyede gerçekleşeceği */
+
+.footer-right .icon3 i:hover {
+  color: #4267b2;
+  transform: scale(1.1);
+}
+/* facebook logosunun üzerine gelindiğinde */
+
+.footer-right .icon4 i {
+  transition: 0.3s ease-in-out;
+}
+/* whatsapp logosunun üzerine gelindiğinde kaç saniyede gerçekleşeceği */
+
+.footer-right .icon4 i:hover {
+  color: #25d366;
+  transform: scale(1.1);
+}
+/* whatsapp logosunun üzerine gelindiğinde */
